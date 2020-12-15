@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+
+body{
+	color:#4a5b65;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size:14px;
+	line-height: 20px;
+}
+
+*:focus{outline:none !important;}
+
+.tdl-holder {
+	margin:0px auto;
+    width: 300px;
+}
+
+.tdl-logo {
+    margin:0px auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.tdl-holder h2{
+	background-color: white;
+	font-family:"Roboto Condensed", Arial, sans-serif;
+	font-size:16px;
+	font-weight: 100;
+	line-height: 56px;
+	margin:0;
+}
+
+.tdl-holder ul, .tdl-holder li {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.tdl-holder li{
+	background-color: #262e4c;
+	border-bottom:1px solid #1c2340;
+	color: #b1b2c9;
+}
+
+.tdl-holder li{
+	cursor:pointer;
+	display:block;
+	line-height: 56px;
+	padding: 0 15px; 
+	position: relative;
+}
+
+.tdl-holder li:hover{
+	background-color: #2a3353;
+	color:#8284a3;
+}
+
+.tdl-holder li a{
+	background-color:#de3f53;
+	border-radius:50%;
+	color:#fff;
+	display:none;
+	float:right;
+	font-weight: bold;
+	line-height: normal;
+	height:16px;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	width:16px;
+}
+
+.tdl-holder li:hover a{
+	display: block;
+}
+
+.tdl-holder li a:hover{	
+	background-color:#fff;
+	color:#de3f53;
+}
+
+.delete {
+    color: red
+}
+
+span {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through
+}
+
+.tdl-new{
+	background-color: #de3f53;
+	border: none;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: inset 0 0 8px 0 #de3f53;
+    color: #fff;
+	font-size:14px;
+	margin:0;
+	padding:20px 15px;
+	width:270px;	
+}
+
+.tdl-new:hover{
+	background-color: #df5265;
+	color: #fff;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+#logout-btn{
+	display: block;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: "Roboto", Arial, sans-serif;
+	text-decoration: none;
+	color: #2a3353;
+	border: 2px solid #262e4c;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	text-align: center;
+	position: relative;
+	transition: all .35s;
+	cursor: pointer;
+  }
+  
+  #logout-btn span{
+	position: relative;
+	z-index: 2;
+  }
+  
+  #logout-btn:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #df5265;
+	transition: all .35s;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+  }
+  
+  #logout-btn:hover{
+	color: #fff;
+  }
+  
+  #logout-btn:hover:after{
+	width: 100%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+  }
